@@ -1,0 +1,406 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+
+p{
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+
+	position: fixed;
+	background: #141642;
+	height: 80px;
+	width: 100%;
+	z-index: 999;
+	box-shadow: 0px 1px 1px 1px;
+	
+}
+
+a.logohover{
+	color: #08FF10;
+	text-decoration: none;
+	
+}
+
+
+label.logo{
+	color: white;
+	font-size: 35px;
+	line-height: 75px;
+	padding: 0 100px;
+	font-weight: bold;
+	text-shadow:
+	3px 3px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+a.logohover:hover{
+	background: none;
+	color: white;
+	transition: .5s;
+}
+
+img.mainlogo{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	padding-top: 100px;
+	padding-bottom: 80px;
+	text-align: center;
+	transition: transform 250ms;
+	
+}
+img.mainlogo:hover{
+	transform: scale(1.2, 1.2);
+}
+
+nav ul{
+	float: right;
+	margin-right: 20px;
+}
+
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+	font-weight: bold;
+}
+
+nav ul li a{
+	color: white;
+	font-size:17px;
+	text-transform: uppercase;
+	padding: 15px 17px;
+	border-radius: 6px;
+}
+
+
+a.active, a:hover{
+	background: #4A7BBD;
+	color: white;
+	transition: .5s;
+}
+
+.checkbtn{
+	font-size:30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display:none;
+}
+#check{
+	display: none;
+}
+
+/*container div*/
+#container{
+	position: relative;
+    min-height: 100vh;
+	
+}
+/*body div*/
+#main{
+	padding-top: 130px;
+	background: #4A7BBD;
+	height: 100hv;
+	width: 100%;
+	padding-bottom: 2.5rem;
+	
+}
+
+@-webkit-keyframes bottomFadeOut {
+  0% {
+	position: relative;
+    margin-top: -8rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: relative;
+    margin-top: 0%;
+    opacity: 1;
+  }
+  
+  
+}
+
+.landing_text{
+	font-size: 5rem;
+	position: relative;
+	opacity: 1;
+	color: white;
+	-webkit-animation-name: bottomFadeOut;
+	-webkit-animation-delay: 0s;
+	-webkit-animation-duration: 3s;
+	margin: auto;
+	width: 100%;
+	text-shadow:
+		3px 3px 0 #000,  
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+	text-align: center;
+}
+
+
+
+
+
+/*footer div*/
+.footer{
+	/*height: 200px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;*/
+	background-color: #141642;
+	padding: 70px 0;
+	box-shadow: 0px 10px 2px 13px;
+}
+.footer_container{
+	max-width:auto;
+	background-color: none;
+	margin: auto;
+	
+}
+.footer-col{
+	width: 25%;
+	padding: 0px 15px;
+	
+}
+.footer-col h4{
+	font-size: 18px;
+	color: white;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 800;
+	position: relative;
+	text-shadow:
+	2px 2px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+	
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #4A7BBD; 
+	height: 4px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-col h5{
+	font-size: 14px;
+	color: white;
+	text-transform: capitalize;
+	margin-bottom: 10px;
+	font-weight: 800;
+	position: relative;
+	text-shadow:
+	2px 2px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+	
+}
+.footer-col h5::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #4A7BBD; 
+	height: 3px;
+	box-sizing: border-box;
+	width: 50px;
+	
+}
+
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;	
+}
+.footer-col ul li a{
+	font-size: 13px;
+	text-transform: capitalize;
+	color: white;
+	text-decoration: none;
+	font-weight: 900;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+	background: none;
+}
+.footer-col ul li a:hover{
+	color: #4A7BBD;
+	padding-left: 25px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(8, 7, 33, 0.96);         /*old: rgba(255, 255, 255, 0.2);*/
+	margin: 0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 40%;
+	color: white;
+	padding-top: 6px;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+	color: #24262b;
+	padding-top: 6px;
+	background-color: white;
+}
+
+.footer-col .footer-img img{
+	height: 75%;
+	width: 75%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.footer-col .footer-text p{
+	color: #bbbbbb;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 13px;
+	font-weight: 900;
+}
+
+.bottom-footer-text p{
+	color: #bbbbbb;
+	padding-top: 20px;
+	text-align: center;
+	font-size: 13px;
+	font-weight: 900;
+	border-top: 2px solid white;
+	margin: auto;
+	margin-top: 25px;
+	width: 70%;
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+
+
+a.email:link{
+	background: none;
+	color: #bbbbbb;
+	transition: .5s;
+}
+
+a.email:hover{
+	background: none;
+	color: #4A7BBD;
+	transition: .5s;
+}
+
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul {
+	list-style: none;
+}
+
+/* for mobile devices */
+@media (max-width: 952px){
+	label.logo{
+		font-size:30px;
+		padding-left: 50px;
+	}
+	
+	img.mainlogo{
+		width: 80%;
+	}
+}
+
+
+nav ul li a{
+	font-size: 16px;
+}
+
+@media (max-width: 858px){
+	.checkbtn{
+		display: block;
+	}
+	
+	a.logohover:hover{
+	color: white;
+	text-decoration: none;
+	
+	}
+	
+	img.mainlogo{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	padding-top: 100px;
+	padding-bottom: 50px;
+	text-align: center;
+	}
+	img.mainlogo:hover{
+	transform: scale(1, 1);
+	}
+
+	nav ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #2c3e50;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+	nav ul li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	nav ul li a{
+		font-size: 20px;
+	}
+	a:hover, a.active{
+		background: none;
+		color: #0082e6;
+	}
+	#check:checked ~ ul{
+		left: 0;
+	}
+}
+
+@media (max-width: 767px){
+	.footer-col{
+		width: 50%;
+		margin-bottom: 30px;
+}
+
+@media (max-width: 574px){
+	.footer-col{
+		width: 100%;
+		margin-bottom: 30px;
+}
