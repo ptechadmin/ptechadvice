@@ -1,4 +1,4 @@
-.mainbody{
+.mainbody_blog{
 	background-color: white;
 	margin: auto;
 	margin-top: 20px;
@@ -6,20 +6,35 @@
 	border-radius: 10px;
 	padding: 10px;
 	box-shadow: 4px 4px 2px 0px;
+	border-style                :   inset;
+    border-width                :   2px;
+    border-color                :   black;
+	
 }
 
-.mainbody h1{
+.mainbody_blog h1{
 	text-align: center;
 	text-decoration: underline;
 	font-size: 4rem;
 }
 
-.mainbody .center{
+.mainbody_blog .center{
 	text-align: center;
 	
 }
 
-.mainbody p{
+.mainbody_blog iframe{
+	border: none;
+	width: 100%;
+    height: 800px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+	
+}
+
+.mainbody_blog p{
 	padding-top: 25px;
 	padding-left: 50px;
 	padding-right: 50px;
@@ -28,4 +43,3 @@
 	font-size: 2rem;
 	font-weight: 700;
 }
-
