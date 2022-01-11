@@ -7,10 +7,13 @@ window.onload = function() {
                 emailjs.sendForm('service_mfsybca', 'template_3uoajcp', this)
                     .then(function() {
                         console.log('SUCCESS!');
+						document.getElementById("contact-form").reset()
+						window.alert("Message Sent!");
                     }, function(error) {
                         console.log('FAILED...', error);
+						document.getElementById("contact-form").reset()
                     });
             });
 			
-			document.getElementById("contact-form").reset()
+			
         }

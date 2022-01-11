@@ -19,6 +19,7 @@
 			})();
 		</script>
 		<script src="..\scripts\contact_form.js"></script>
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 		<title>P.tech Advice</title>
 	</head>
 	<body>
@@ -62,14 +63,16 @@
 								<input type="text" id="lname" name="lastname" placeholder="Last Name.." required>
 								
 								<label>Email</label>
-								<input type="email" name="user_email" required>
+								<input type="email" name="user_email" placeholder="E.g. email@yahoo.com.." required>
 
 								<label for="subject">Subject</label>
 								<textarea id="subject" name="message" placeholder="Say Something..." style="height:200px" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required ></textarea>
-
-								<input type="submit" value="Send">
-
+								<div class="g-recaptcha" style=" padding-bottom: 20px" data-sitekey="6LdB7AMeAAAAAMN_V_oLp2En7wwc_7fXu6tUtsss"></div>
+								<input id="sent" type="submit" value="Send" disabled="disabled">
+							
 							</form>
+							
+							
 					</div>
 				</div>
 			</div>
@@ -120,7 +123,7 @@
 						<div class="footer-col">
 							<h4>Advertisements</h4>
 								<div class="footer-text">
-									<p>Coming soon</p>
+									<p></p>
 								</div>
 						</div>	
 					</div>
