@@ -17,14 +17,14 @@ p{
 
 #nav{
 
-	position: sticky;
+	position: fixed;
 	background: #141642;
 	height: 80px;
 	width: 100%;
 	z-index: 999;
 	box-shadow: 0px 1px 1px 1px;
 	top: 0;
-	transition: top 0.8s;
+	transition: top 0.6s;
 	
 }
 
@@ -267,8 +267,10 @@ a.active, a:hover{
 .footer{
 	/*height: 200px;
 	width: 100%;
-	bottom: 0;*/
+	bottom: 0;
 	position: absolute;
+	*/
+	
 	background-color: #141642;
 	padding: 70px 0;
 	box-shadow: 0px 10px 2px 13px;
