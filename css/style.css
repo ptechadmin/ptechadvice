@@ -2,7 +2,7 @@
   /* CSS specific to iOS devices */ 
 	#nav{
 		
-		position: fixed;
+		position: sticky;
 		background: #141642;
 		
 		  
