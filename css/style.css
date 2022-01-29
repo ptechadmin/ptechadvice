@@ -2,8 +2,9 @@
   /* CSS specific to iOS devices */ 
 	#nav{
 		
-		position: sticky;
+		
 		background: #141642;
+		position: absolute;
 		height: 80px;
 		width: 100%;
 		z-index: 999;
